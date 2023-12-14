@@ -1,5 +1,7 @@
 # Golang Apache Impala Driver
 
+test
+
 Forked from https://github.com/bippio/go-impala
 
 ## Install
