@@ -6,7 +6,7 @@ Forked from https://github.com/bippio/go-impala
 
 ## Install
 
-go get github.com/kprotoss/go-impala
+go get github.com/dhadk/go-impala
 
 
 ## Connection Parameters and DSN
@@ -63,7 +63,7 @@ import (
 	"database/sql"
 	"log"
 
-	"github.com/kprotoss/go-impala"
+	"github.com/dhadk/go-impala"
 )
 
 func main() {

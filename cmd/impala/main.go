@@ -15,7 +15,7 @@ import (
 	"syscall"
 	"time"
 
-	impala "github.com/kprotoss/go-impala"
+	impala "github.com/dhadk/go-impala"
 )
 
 func main() {

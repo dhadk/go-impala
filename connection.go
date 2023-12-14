@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/apache/thrift/lib/go/thrift"
-	"github.com/kprotoss/go-impala/hive"
+	"github.com/dhadk/go-impala/hive"
 )
 
 // Conn to impala. It is not used concurrently by multiple goroutines.
@@ -112,6 +112,8 @@ func (c *Conn) ResetSession(ctx context.Context) error {
 
 // Close connection
 func (c *Conn) Close() error {
+	ctx := context.Background()
+	c.session.Close(ctx)
 	c.log.Printf("close connection")
 	return c.t.Close()
 }

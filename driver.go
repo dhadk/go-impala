@@ -16,8 +16,8 @@ import (
 
 	"github.com/apache/thrift/lib/go/thrift"
 
-	"github.com/kprotoss/go-impala/hive"
-	"github.com/kprotoss/go-impala/sasl"
+	"github.com/dhadk/go-impala/hive"
+	"github.com/dhadk/go-impala/sasl"
 )
 
 var (

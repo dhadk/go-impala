@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	"log"
 
-	_ "github.com/kprotoss/go-impala"
+	_ "github.com/dhadk/go-impala"
 )
 
 func main() {

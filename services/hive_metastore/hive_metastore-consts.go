@@ -7,12 +7,11 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"time"
 	thrift "github.com/apache/thrift/lib/go/thrift"
-	"strings"
+	"github.com/dhadk/go-impala/services/fb303"
 	"regexp"
-	"github.com/kprotoss/go-impala/services/fb303"
-
+	"strings"
+	"time"
 )
 
 // (needed to ensure safety because of naive import list construction.)
@@ -22,11 +21,13 @@ var _ = errors.New
 var _ = context.Background
 var _ = time.Now
 var _ = bytes.Equal
+
 // (needed by validator.)
 var _ = strings.Contains
 var _ = regexp.MatchString
 
 var _ = fb303.GoUnusedProtection__
+
 const DDL_TIME = "transient_lastDdlTime"
 const IS_ARCHIVED = "is_archived"
 const ORIGINAL_LOCATION = "original_location"
@@ -46,4 +47,3 @@ const META_TABLE_STORAGE = "storage_handler"
 
 func init() {
 }
-
